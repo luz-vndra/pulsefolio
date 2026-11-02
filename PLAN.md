@@ -127,20 +127,20 @@ MongoDB is authoritative for persisted financial records. Redux is a client-side
 - Why event handlers must be registered and cleaned up correctly.
 
 ### Build
-- [ ] Initialize repository and document prerequisites/run commands.
-- [ ] Create a TypeScript React frontend and Node.js/Express API.
-- [ ] Add a Socket.IO server and client.
-- [ ] Implement a synthetic price publisher for one symbol (e.g., `RELIANCE`).
-- [ ] Display price, connection state, timestamp, and monotonically increasing sequence.
-- [ ] Register and clean up client event listeners correctly.
-- [ ] Add a small README section explaining the connection lifecycle.
+- [x] Initialize repository and document prerequisites/run commands.
+- [x] Create a TypeScript React frontend and Node.js/Express API.
+- [x] Add a Socket.IO server and client.
+- [x] Implement a synthetic price publisher for one symbol (e.g., `RELIANCE`).
+- [x] Display price, connection state, timestamp, and monotonically increasing sequence.
+- [x] Register and clean up client event listeners correctly.
+- [x] Add a small README section explaining the connection lifecycle.
 
 ### Verify
-- [ ] Price updates arrive approximately once per second.
-- [ ] Stopping the API shows a disconnected state.
-- [ ] Restarting the API results in reconnection.
-- [ ] React remounts do not multiply event handlers.
-- [ ] No unexpected console/server errors.
+- [x] Price updates arrive approximately once per second.
+- [x] Stopping the API shows a disconnected state.
+- [x] Restarting the API results in reconnection.
+- [x] React remounts do not multiply event handlers.
+- [x] No unexpected console/server errors.
 
 ### Failure experiment
 Stop and restart the server. Record what the client sees and what data it misses.
