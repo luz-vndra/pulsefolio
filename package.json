@@ -1,0 +1,16 @@
+{
+  "name": "pulsefolio",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"npm run dev -w @pulsefolio/api\" \"npm run dev -w @pulsefolio/web\"",
+    "build": "npm run build -w @pulsefolio/contracts && npm run build -w @pulsefolio/api && npm run build -w @pulsefolio/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
